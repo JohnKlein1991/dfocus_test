@@ -1,6 +1,4 @@
 <?php
-namespace helpers;
-
 const ROOT = __DIR__;
 
 // проверяем, авторизирован ли пользователь
@@ -24,6 +22,7 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $dbHelper = new DBHelper($dbConf);
     $db = $dbHelper->db;
 
+    //получаем список алгоритмов, которые нужно использовать для данного теста и массив вопросов с ответами пользователя
     $algoArr = $test->getAlgo($db);
     $answersArr = $test->getAnswers();
 
