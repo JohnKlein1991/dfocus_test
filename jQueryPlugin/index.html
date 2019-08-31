@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="slideshow.js">
+    </script>
+</head>
+<body>
+<h1>Test jQuery plugin</h1>
+<h4>Place for slideshow</h4>
+<div class="slides">
+</div>
+<script>
+    $('div.slides').imageSlider([
+        'https://s00.yaplakal.com/pics/userpic/7/5/0/av-811057.jpg',
+        'http://zabavnik.club/wp-content/uploads/kartinki_32_07140102.jpg',
+        'https://st2.depositphotos.com/5371668/8408/i/450/depositphotos_84086784-stock-photo-man-and-the-universe.jpg'
+    ]);
+</script>
+</body>
+</html>
